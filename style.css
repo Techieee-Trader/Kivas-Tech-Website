@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+}
+ .hero{
+    background-image: url(/backgroundimage.jpg);
+    position:absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 200vw;
+    height: 100vh;
+    z-index: -100;
+    opacity: 0.2;
+ }
+.container{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+h3{
+    font-size: 14px;
+    font-weight:400;
+    letter-spacing: 8px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.sm a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    line-height: 60px;
+    align-items: center;
+    color: black;
+    font-size: 22px;
+    border-radius: 50%;
+    margin: 0 30px;
+    opacity: 0.8;
+    transition: 0.3sec linear;
+}
+
+.sm a:hover{
+    transform: scale(1.1);
+    opacity:1;  
+}
