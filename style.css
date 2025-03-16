@@ -16,14 +16,17 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 200vw;
+    min-width: 100vw;
     height: 100vh;
+    /* width : 100vw; */
     z-index: -100;
     opacity: 0.2;
  }
 .container{
     color: white;
     text-transform: uppercase;
+    /* justify-content: center;
+    align-items: center; */
     text-align: center;
 }
 h1{
@@ -43,13 +46,15 @@ h3{
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-color: aqua;
+    /* background-color: aqua; */
     line-height: 60px;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 22px;
     border-radius: 50%;
-    margin: 0 30px;
+    margin: 0 15px;
     opacity: 0.8;
     transition: 0.3sec linear;
 }
@@ -61,30 +66,38 @@ h3{
 
 @media (max-width: 768px) {
     h1 {
-      font-size: 40px;
+      font-size: clamp(28px, 6vw, 50px);
+      /* font-size: 40px; */
     }
     h3 {
-      font-size: 14px;
-      letter-spacing: 3px;
+      font-size: clamp(10px, 2.5vw, 14px);
+      letter-spacing: 2px;
     }
     .sm a {
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
     }
   }
   
   @media (max-width: 480px) {
     h1 {
-      font-size: 30px;
+      font-size: clamp(24px, 5vw, 40px);
     }
     h3 {
-      font-size: 12px;
-      letter-spacing: 2px;
+      font-size: clamp(10px, 2vw, 12px);
+    }
+    .sm {
+      gap: 1px;
+      flex-wrap: nowrap;
     }
     .sm a {
-      width: 35px;
-      height: 35px;
-      font-size: 16px;
+        gap: 1px;
+        flex-wrap: nowrap;
+      width: 20px;
+      height: 20px;
+      font-size: 8px;
+      background: none;
+      color: white;
     }
   }
